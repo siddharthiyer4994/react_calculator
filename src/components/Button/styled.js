@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const large = {
-    width:'5em'
+    width:'5.9em'
 }
 
 const theme = [
@@ -27,7 +27,7 @@ margin-top:5px;
 margin-left:1em;
 height:35px;  
 border:none;
-border-radius:50%;
+border-radius:40%;
 width:${props =>{ return props.value == '0' ? large.width : '2.5em'}};
 color: ${props => {
         const currentTheme = theme.filter(item => item.name == props.theme);        
@@ -37,6 +37,7 @@ background:${props => {
         const currentTheme = theme.filter(item => item.name == props.theme);        
         return currentTheme[0]['background']
     }};
+font-family: 'Open Sans';
 `
 
  
